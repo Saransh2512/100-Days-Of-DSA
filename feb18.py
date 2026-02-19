@@ -3,7 +3,6 @@
 def rotate(nums, k):
     n = len(nums)
     k %= n
-    
     def reverse(start, end):
         while start < end:
             nums[start], nums[end] = nums[end], nums[start]
